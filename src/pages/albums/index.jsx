@@ -62,7 +62,7 @@ const index = () => {
                     {userData[item.userId]?.name}
                   </td>
                   <td className="p-5">
-                    <ButtonShow>Show</ButtonShow>
+                    <ButtonShow link={`/album/${item.id}`}>Show</ButtonShow>
                   </td>
                 </tr>
               ))

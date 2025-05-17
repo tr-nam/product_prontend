@@ -75,7 +75,7 @@ const index = () => {
                 </td>
                 <td className="p-5">
                   <a href={`/users/${user.id}`}>
-                    <ButtonShow>Show</ButtonShow>
+                    <ButtonShow link={`/user/${user.id}`}>Show</ButtonShow>
                   </a>
                 </td>
               </tr>

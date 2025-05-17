@@ -1,3 +1,5 @@
+import { BrowserRouter, Routes, Route } from "react-router";
+
 
 import DefautLayout from "@/layout/DefautLayout";
 import Albums from '@/pages/albums';
@@ -9,7 +11,15 @@ import UserShow from '@/components/views/userShow';
 function App() {
 
   return (
-    <DefautLayout children={<UserShow />} />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<DefautLayout children={<Albums />} />} />
+        <Route path="/albums" element={<DefautLayout children={<Albums />} />} />
+        <Route path="/users" element={<DefautLayout children={<Users />} />} />
+        <Route path="/album/:id" element={<DefautLayout children={<AlbumShow />} />} />
+        <Route path="/user/:id" element={<DefautLayout children={<UserShow />} />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
