@@ -45,13 +45,13 @@ Album Viewer là một ứng dụng web React hiển thị danh sách người d
 - **Demo**: [Link demo nếu có]
 - **Ảnh chụp màn hình**:
   - Danh sách Albums:Bảng hiển thị ID, Title, Users, Actions và nút "Show".
-  ![Danh sách Albums](./assets/screenshots/albums.png)
+  ![Danh sách Albums](./src/assets/screenshots/albums.png)
   - Chi tiết album: Breadcrumb, nút quay lại, thông tin người tạo, và lưới ảnh.
-  ![Chi tiết album](./assets/screenshots/albumShow.png)
+  ![Chi tiết album](./src/assets/screenshots/albumShow.png)
   - Danh sách người dùng: Bảng hiển thị ID, Avatar, Name, Email, Phone, Website, và nút "Show".
-  ![Danh sách người dùng](./assets/screenshots/users.png)
+  ![Danh sách người dùng](./src/assets/screenshots/users.png)
   - Chi tiết người dùng: Breadcrumb, nút quay lại, Avatar, Name, Email, và bảng danh sách album với ID, Title, và nút "Show".
-  ![Chi tiết album](./assets/screenshots/userShow.png)
+  ![Chi tiết album](./src/assets/screenshots/userShow.png)
 
 ## 🔧 Chức năng chính
 
