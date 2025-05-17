@@ -1,12 +1,75 @@
-# React + Vite
+# 🧩 Album Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Mục tiêu / Mô tả ngắn
 
-Currently, two official plugins are available:
+Album Viewer là một ứng dụng web React hiển thị danh sách người dùng, chi tiết người dùng, và các album ảnh từ API JSONPlaceholder. Ứng dụng cung cấp giao diện thân thiện để xem thông tin người dùng và duyệt ảnh trong các album.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️ Công nghệ sử dụng
 
-## Expanding the ESLint configuration
+- **React**: Thư viện JavaScript để xây dựng giao diện người dùng.
+- **Vite**: Công cụ build nhanh và hiện đại cho các dự án web.
+- **React Router**: Thư viện định tuyến client-side cho React để quản lý các trang và điều hướng.
+- **TailwindCSS**: Framework CSS để tạo kiểu nhanh chóng và responsive.
+- **Axios**: Thư viện để thực hiện các yêu cầu HTTP tới API.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧪 Cách chạy dự án (Development)
+
+1. Clone repository:
+   ```bash
+   git clone https://github.com/tr-nam/product_prontend.git
+   ```
+2. Cài đặt dependencies:
+   ```bash
+   npm install
+   ```
+3. Chạy ứng dụng ở chế độ development:
+   ```bash
+   npm run dev
+   ```
+4. Mở trình duyệt và truy cập `http://localhost:5173`.
+
+## 🚀 Cách build / deploy
+
+1. Build ứng dụng cho production:
+   ```bash
+   npm run build
+   ```
+2. Kết quả build sẽ nằm trong thư mục `dist`.
+3. Deploy lên các nền tảng như **Vercel**, **Netlify**, hoặc **GitHub Pages**:
+   - Vercel: Import dự án từ GitHub và deploy trực tiếp.
+   - Netlify: Kéo thả thư mục `dist` vào giao diện Netlify hoặc liên kết với repository.
+   - GitHub Pages: Sử dụng action hoặc đẩy thư mục `dist` lên branch `gh-pages`.
+
+## 📸 Demo hoặc ảnh chụp màn hình
+
+- **Demo**: [Link demo nếu có]
+- **Ảnh chụp màn hình**:
+  - Danh sách Albums:Bảng hiển thị ID, Title, Users, Actions và nút "Show".
+  ![Danh sách Albums](./assets/screenshots/albums.png)
+  - Chi tiết album: Breadcrumb, nút quay lại, thông tin người tạo, và lưới ảnh.
+  ![Chi tiết album](./assets/screenshots/albumShow.png)
+  - Danh sách người dùng: Bảng hiển thị ID, Avatar, Name, Email, Phone, Website, và nút "Show".
+  ![Danh sách người dùng](./assets/screenshots/users.png)
+  - Chi tiết người dùng: Breadcrumb, nút quay lại, Avatar, Name, Email, và bảng danh sách album với ID, Title, và nút "Show".
+  ![Chi tiết album](./assets/screenshots/userShow.png)
+
+## 🔧 Chức năng chính
+
+✅ Hiển thị danh sách người dùng từ API JSONPlaceholder.  
+✅ Xem chi tiết người dùng với avatar, tên, email, và danh sách album.  
+✅ Hiển thị chi tiết album với lưới ảnh và hiệu ứng hover xem trước.  
+✅ Breadcrumb điều hướng và nút quay lại.  
+✅ Trạng thái loading đẹp khi chờ dữ liệu API.
+
+## 🔮 Hướng phát triển / Todo
+
+- Sử dụng thông tin từ Api
+- Hiển thị thông tin ra giao diện người dùng
+- Thêm phân trang cho danh sách người dùng và album.
+- Tích hợp React Router để quản lý định tuyến client-side.
+
+## 🧑‍💻 Thông tin tác giả / GitHub / liên hệ
+
+- **Tên**: Nam Trần
+- **GitHub**: [https://github.com/tr-nam]
+- **Email**: [tr.namm29@gmail.com]
